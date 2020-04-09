@@ -11,10 +11,16 @@ export default function Logon() {
         <img src={logoImg} alt="Be The Hero" />
         <form>
           <h1>Faça seu Logon</h1>
+
           <input placeholder="Sua ID" />
-          <button type="submit">Entrar</button>
-          <FiLogIn size={16} color="#e02041" />
-          <a href="/register">Não tenho cadastro</a>
+          <button className="button" type="submit">
+            Entrar
+          </button>
+
+          <a href="/register">
+            <FiLogIn size={16} color="#e02041" />
+            Não tenho cadastro
+          </a>
         </form>
       </section>
       <img src={hero} alt="Heroes" />
